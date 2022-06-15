@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color:hsl(0, 0%, 95%);
+    background-color: #ff8080;
+    background-image: url('./images/bg-intro-desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* Desktop styles (not in a media query) */
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.left-side{
+    width: 30%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+}
+.left-side h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 30px;
+    line-height: 0.8;
+}
+.left-side h4{
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'Poppins', sans-serif;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+.right-side{
+    margin-top: 50px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.right-side .try-btn{
+    width:70%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.right-side .try-btn button{
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background: hsl(248, 32%, 49%);
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+    /* box-shadow: 10px 10px 10px rgba(216, 27, 87, 0.6); */
+}
+.right-side .try-btn button span{
+    background:transparent;
+    color:hsl(0, 0%, 100%);
+    font-weight: normal;
+}
+.right-side form{
+    width:70%;
+    margin: 0 auto;
+    background: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.right-side form .inp{
+    width:90%;
+    margin: 10px auto;
+    background: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.right-side form .inp .merge{
+    background: transparent;
+}
+.right-side form .inp.show{
+    border: 1px solid hsl(246, 25%, 77%);
+}
+.right-side form .inp .formInp{
+    width: 92%;
+    outline: none;
+    border: 0px;
+    padding: 10px;
+    padding-left: 25px;
+    background: hsl(0, 0%, 100%);
+    color:#000;
+}
+.right-side form .inp .merge span{
+    
+    background: hsl(0, 0%, 100%);
+    width: 8%;
+}
+.right-side form .inp .merge span img{
+    margin-top: 7px;
+    background: hsl(0, 0%, 100%);
+    border-radius: 50px;
+    position: absolute;
+    display: none;
+}
+.right-side form .inp button{
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    background: hsl(154, 59%, 51%);
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.right-side form .inp p{
+    background: hsl(0, 0%, 100%);
+    font-size: 12px;
+    text-align: center;
+    margin-top: -15px;
+    color:hsl(248, 32%, 49%)
+}
+.right-side form .inp p a{
+    text-decoration: none;
+    background: hsl(0, 0%, 100%);
+    color:hsl(0, 100%, 74%) 
+}
+.err{
+    display: block;
+    position: absolute;
+    background: none;
+    margin-top: 12px;
+    font-size: 10px;
+    color: red;
+    font-style: italic;
+    text-align: right;
+    width: 31%;
+}
+@media screen and (max-width: 620px) {
+    .wrapper {
+        display: block;
+        flex-direction: column;
+    }
+    .left-side{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .right-side{
+        width: 100%;
+        margin: 20px auto;
+    }
+    .err{
+        display: block;
+        position: absolute;
+        background: none;
+        margin-top: 12px;
+        font-size: 10px;
+        color: red;
+        font-style: italic;
+        text-align: right;
+        width: 60%;
+    }
+}
