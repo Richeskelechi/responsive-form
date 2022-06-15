@@ -165,6 +165,14 @@
         width: 100%;
         margin: 20px auto;
     }
+    .right-side .try-btn{
+        width:90%;
+        margin: 0 auto;
+    }
+    .right-side form{
+        width: 90%;
+        margin: 0 auto;
+    }
     .err{
         display: block;
         position: absolute;
