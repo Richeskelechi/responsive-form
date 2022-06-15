@@ -176,4 +176,21 @@
         text-align: right;
         width: 60%;
     }
+    .right-side form .inp .merge .formInp{
+        width: 85%
+    }
+    .right-side form .inp .merge .span{
+        width: 15%
+    }
+}
+@media screen and (max-width: 970px) {
+    .right-side form .inp .merge .formInp{
+        width: 85%
+    }
+    .right-side form .inp .merge .span{
+        width: 15%
+    }
+    .right-side form .inp .merge span img{
+        margin-right: 20px;
+    }
 }
