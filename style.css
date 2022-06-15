@@ -168,9 +168,11 @@
     .right-side .try-btn{
         width:90%;
         margin: 0 auto;
+        margin-bottom: 20px;
     }
     .right-side form{
         width: 90%;
+        padding:20px;
         margin: 0 auto;
     }
     .err{
