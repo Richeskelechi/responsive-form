@@ -26,34 +26,43 @@ form.addEventListener('submit', (event) => {
     if (first == "") {
         document.querySelector('#firstErr').innerHTML = 'First Name cannot be empty';
         document.querySelector('#firstImg').style.display = 'inline-block';
+        document.getElementById('firstDiv').style.border = '2px solid red';
         firstFilled = false;
     } else {
+        document.getElementById('firstDiv').style.border = '2px solid green';
         firstFilled = true
     }
     if (last == "") {
         document.querySelector('#lastErr').innerHTML = 'Last Name cannot be empty';
         document.querySelector('#lastImg').style.display = 'inline-block';
+        document.getElementById('lastDiv').style.border = '2px solid red';
         lastFilled = false;
     } else {
+        document.getElementById('lastDiv').style.border = '2px solid green';
         lastFilled = true
     }
     if (email == "") {
         document.querySelector('#emailErr').innerHTML = 'Email Address cannot be empty';
         document.querySelector('#emailImg').style.display = 'inline-block';
+        document.getElementById('emailDiv').style.border = '2px solid red';
         emailFilled = false
     } else if (email.match(mailformat)) {
+        document.getElementById('emailDiv').style.border = '2px solid green';
         emailFilled = true
     }
     else {
         document.querySelector('#emailErr').innerHTML = 'Looks like this is not an email';
         document.querySelector('#emailImg').style.display = 'inline-block';
+        document.getElementById('emailDiv').style.border = '2px solid red';
         emailFilled = false
     }
     if (password == "") {
         document.querySelector('#passErr').innerHTML = 'Password cannot be empty';
         document.querySelector('#passImg').style.display = 'inline-block';
+        document.getElementById('passwordDiv').style.border = '2px solid red';
         passwordFilled = false
     } else {
+        document.getElementById('passwordDiv').style.border = '2px solid green';
         passwordFilled = true
     }
 
